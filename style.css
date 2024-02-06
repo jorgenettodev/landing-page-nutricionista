@@ -521,6 +521,20 @@ nav {
     cursor: pointer;
 }
 
+.results__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 300px));
+    gap: 2rem;
+    justify-content: center;
+}
+
+.results__card img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    object-position: center;
+}
+
 /* MEDIA QUERIES */
 
 @media (width < 900px) {
