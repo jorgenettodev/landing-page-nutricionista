@@ -473,8 +473,125 @@ nav {
 
 .review__content p{
     color: var(--text-light);
+    max-width: 800px;
+    color: var(--text-light);
 }
 
 .review__content span i {
     color: var(--secondary-color);
+}
+
+.review__rating span {
+    font-size: 1.5rem;
+    color: var(--secondary-color);
+}
+
+.review__footer {
+    margin-top: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.review__member {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+.review__member img {
+    max-width: 60px;
+    border-radius: 100%;
+}
+
+.review__member__details h4 {
+    margin-bottom: 0;
+}
+
+.review__nav {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.review__nav span {
+    font-size: 2rem;
+    color: var(--secondary-color);
+    cursor: pointer;
+}
+
+/* MEDIA QUERIES */
+
+@media (width < 900px) {
+    .nav__links {
+        display: none;
+    }
+
+    .header__container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .header__image {
+        grid-area: 1/1/2/2;
+    }
+
+    .explore__grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+    }
+
+    .class__container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .class__image {
+        min-height: 500px;
+    }
+
+    .price__grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .review__container {
+        gap: 2rem;
+    }
+}
+
+@media (width < 600px) {
+
+    .header__content h1 {
+        font-size: 3rem;
+    }
+
+    .explore__grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .explore__header {
+        flex-direction: column;
+    }
+
+    .join__container {
+        margin-bottom: 15rem;
+    }
+
+    .join__grid {
+        width: 100%;
+        margin: 0;
+        bottom: -20rem;
+    }
+
+    .price__grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .review__container {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .review__footer {
+        flex-direction: column;
+    }
 }
